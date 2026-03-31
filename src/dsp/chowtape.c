@@ -884,6 +884,7 @@ typedef struct audio_fx_api_v2 {
     void (*process_block)(void *instance, int16_t *audio_inout, int frames);
     void (*set_param)(void *instance, const char *key, const char *val);
     int (*get_param)(void *instance, const char *key, char *buf, int buf_len);
+    void (*on_midi)(void *instance, const uint8_t *msg, int len, int source);
 } audio_fx_api_v2_t;
 
 static void* v2_create_instance(const char *module_dir, const char *config_json) {
@@ -1201,6 +1202,7 @@ audio_fx_api_v2_t* move_audio_fx_init_v2(const host_api_v1_t *host) {
     g_api.process_block = v2_process_block;
     g_api.set_param = v2_set_param;
     g_api.get_param = v2_get_param;
+    g_api.on_midi = NULL;  /* No MIDI handling needed */
 
     if (host && host->log)
         host->log("[chowtape] CHOWTape v0.1.0 loaded (GPL-3.0, based on AnalogTapeModel by Jatin Chowdhury)");
