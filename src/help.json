@@ -1,0 +1,45 @@
+{
+  "title": "CHOWTape",
+  "sections": [
+    {
+      "heading": "Overview",
+      "body": "Analog tape model based on the Jiles-Atherton magnetic hysteresis model. Port of AnalogTapeModel by Jatin Chowdhury."
+    },
+    {
+      "heading": "Drive",
+      "body": "Controls the input level into the hysteresis model. Higher values push the tape harder, increasing harmonic saturation and compression."
+    },
+    {
+      "heading": "Saturation",
+      "body": "Controls the magnetic saturation of the virtual tape. Lower values increase saturation for a thicker, more compressed sound."
+    },
+    {
+      "heading": "Bias",
+      "body": "Controls the tape bias / width parameter. Affects the reversibility of the magnetization process, changing the harmonic character of the distortion."
+    },
+    {
+      "heading": "Tone",
+      "body": "Tilt EQ applied before the tape stage. Center (0.5) is flat. Turn left for darker, warmer sound; turn right for brighter, more present sound."
+    },
+    {
+      "heading": "Speed",
+      "body": "Simulates tape speed from slow to fast. Slower speeds roll off more high frequencies (like real tape) and shift the head bump resonance lower."
+    },
+    {
+      "heading": "Flutter",
+      "body": "Combined wow and flutter effect. Adds slow pitch drift (wow) and faster pitch modulation (flutter) through a modulated delay line. Includes Ornstein-Uhlenbeck variance for realistic irregularity."
+    },
+    {
+      "heading": "Chew",
+      "body": "Simulates physical tape damage. Creates random periods of signal dropout and lowpass filtering, as if the tape has been crinkled or chewed."
+    },
+    {
+      "heading": "Mix",
+      "body": "Blends between the dry (unprocessed) and wet (tape-processed) signal. Useful for parallel processing."
+    },
+    {
+      "heading": "Credits",
+      "body": "Based on AnalogTapeModel (CHOW Tape) by Jatin Chowdhury. Hysteresis model from the DAFx paper: https://ccrma.stanford.edu/~jatin/420/tape/TapeModel_DAFx.pdf"
+    }
+  ]
+}

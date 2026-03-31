@@ -1,0 +1,125 @@
+{
+  "id": "chowtape",
+  "name": "CHOWTape",
+  "abbrev": "CT",
+  "version": "0.1.0",
+  "description": "Analog tape model with Jiles-Atherton hysteresis",
+  "author": "charlesvestal",
+  "license": "GPL-3.0",
+  "dsp": "chowtape.so",
+  "api_version": 2,
+  "capabilities": {
+    "chainable": true,
+    "component_type": "audio_fx",
+    "ui_hierarchy": {
+      "levels": {
+        "root": {
+          "name": "CHOWTape",
+          "params": [
+            {
+              "key": "drive",
+              "label": "Drive",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 0.5,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "saturation",
+              "label": "Saturation",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 0.5,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "bias",
+              "label": "Bias",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 0.5,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "tone",
+              "label": "Tone",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 0.5,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "speed",
+              "label": "Speed",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 0.5,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "flutter",
+              "label": "Flutter",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 0.0,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "chew",
+              "label": "Chew",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 0.0,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "mix",
+              "label": "Mix",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 1.0,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "degrade",
+              "label": "Degrade",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 0.0,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "output",
+              "label": "Output",
+              "type": "float",
+              "min": 0.0,
+              "max": 1.0,
+              "default": 0.5,
+              "step": 0.01,
+              "unit": "%"
+            }
+          ],
+          "knobs": ["drive", "saturation", "bias", "tone", "speed", "flutter", "chew", "mix"]
+        }
+      }
+    }
+  }
+}
