@@ -1182,7 +1182,19 @@ static int v2_get_param(void *instance, const char *key, char *buf, int buf_len)
     if (strcmp(key, "ui_hierarchy") == 0) {
         return snprintf(buf, buf_len,
             "{\"levels\":{\"root\":{\"name\":\"CHOWTape\","
-            "\"knobs\":[\"drive\",\"saturation\",\"bias\",\"tone\",\"speed\",\"flutter\",\"chew\",\"mix\"]}}}");
+            "\"knobs\":[\"drive\",\"saturation\",\"bias\",\"tone\",\"speed\",\"flutter\",\"chew\",\"mix\"],"
+            "\"params\":["
+            "{\"key\":\"drive\",\"label\":\"Drive\"},"
+            "{\"key\":\"saturation\",\"label\":\"Saturation\"},"
+            "{\"key\":\"bias\",\"label\":\"Bias\"},"
+            "{\"key\":\"tone\",\"label\":\"Tone\"},"
+            "{\"key\":\"speed\",\"label\":\"Speed\"},"
+            "{\"key\":\"flutter\",\"label\":\"Flutter\"},"
+            "{\"key\":\"chew\",\"label\":\"Chew\"},"
+            "{\"key\":\"degrade\",\"label\":\"Degrade\"},"
+            "{\"key\":\"mix\",\"label\":\"Mix\"},"
+            "{\"key\":\"output\",\"label\":\"Output\"}"
+            "]}}}");
     }
 
     return -1;
