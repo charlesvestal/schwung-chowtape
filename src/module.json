@@ -2,7 +2,7 @@
   "id": "chowtape",
   "name": "CHOWTape",
   "abbrev": "CT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Analog tape model with Jiles-Atherton hysteresis",
   "author": "charlesvestal",
   "license": "GPL-3.0",
