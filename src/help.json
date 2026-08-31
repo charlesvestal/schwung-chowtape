@@ -13,12 +13,17 @@
         "Chowdhury's",
         "AnalogTapeModel.",
         "",
-        "Ten knobs, all on one",
-        "page, in this order:",
+        "Eight knobs on the",
+        "first page:",
         "Drive, Saturation,",
         "Bias, Tone, Speed,",
-        "Flutter, Chew, Mix,",
-        "Degrade, Output."
+        "Flutter, Chew, Mix.",
+        "",
+        "Degrade and Output",
+        "are not knobs on",
+        "that page - jog on",
+        "past Mix to reach",
+        "them."
       ]
     },
     {
